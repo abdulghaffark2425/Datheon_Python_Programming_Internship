@@ -80,3 +80,19 @@ An automated Python utility that cleans up cluttered directories by sorting file
 * Handles file naming collisions seamlessly to prevent overwriting existing files.
 * Includes exception handling for permission and filesystem errors.
 * Displays a detailed execution summary showing total relocated files.
+---
+
+## Task 4: Rule-Based Interactive Terminal Assistant / Chatbot
+
+A responsive, rule-based customer support assistant that processes user inputs using regular expressions and keyword matching to provide contextual responses based on an FAQ dataset.
+
+### Features
+* **Dataset Driven:** Dynamic responses loaded directly from `sample_faq.json`[cite: 8].
+* **Intent Recognition:** Uses keyword score matching and regular expressions to identify user intents[cite: 8].
+* **Input Normalization:** Strips extra spaces and converts input to lowercase for robust pattern matching[cite: 8].
+* **Graceful Fallbacks:** Handles low-confidence or unrecognized queries with helpful fallback suggestions[cite: 8].
+* **Clean Session Termination:** Allows users to exit gracefully using `'exit'`, `'quit'`, or `'bye'` commands[cite: 8].
+
+### How to Run Task 4
+```bash
+python chatbot.py
