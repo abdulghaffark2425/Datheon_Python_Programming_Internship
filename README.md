@@ -67,3 +67,16 @@ A terminal-based stock portfolio manager written in Python. It helps users manag
 ## Run Task 2
 ```bash
 python stock_tracker.py
+
+---
+
+## Task 3: Automated File Organizer & Cleanup Utility
+
+An automated Python utility that cleans up cluttered directories by sorting files into categorized folders based on their file extensions.
+
+### Features
+* Categorizes files into `Documents`, `Images`, `Videos`, `Archives`, and `Code`.
+* Automatically creates destination category folders if they do not exist.
+* Handles file naming collisions seamlessly to prevent overwriting existing files.
+* Includes exception handling for permission and filesystem errors.
+* Displays a detailed execution summary showing total relocated files.
