@@ -51,3 +51,19 @@ Task_1_Hangman_Game/
 ## Note
 
 This is a learning project. The word list is stored in the source code and can be expanded by editing `WORDS` in `hangman.py`.
+---
+
+# Task 2: Stock Portfolio Tracker
+
+A terminal-based stock portfolio manager written in Python. It helps users manage a simple investment portfolio with real-time price calculations using hardcoded stock values.
+
+## Features
+- Pre-defined dictionary of real-time stock prices (AAPL, TSLA, MSFT, GOOGL, AMZN, NVDA)
+- Input validation for stock symbols and positive share quantities
+- Dynamic summary table generation with individual stock values
+- Automatic total investment portfolio calculation
+- Pure Python implementation with zero external dependencies
+
+## Run Task 2
+```bash
+python stock_tracker.py
