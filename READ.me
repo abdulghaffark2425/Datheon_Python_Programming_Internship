@@ -1,0 +1,143 @@
+# 🚀 Datheon Machine Learning & Data Science Internship
+
+Welcome to the official repository containing all four completed core tasks for the **Datheon Machine Learning & Data Science 4-Week Internship Program**. Each task demonstrates end-to-end implementation of machine learning workflows, rigorous feature engineering, model optimization, and model performance benchmarking.
+
+## 📌 Executive Summary of Completed Tasks
+
+| Task # | Task Title | Key ML Focus & Methodologies | Recommended Stack | Status | 
+| ----- | ----- | ----- | ----- | ----- | 
+| **01** | Multi-Class Benchmark Classification Pipeline | Standard Scaling, Pairplots, Logistic Regression, Decision Trees, Decision Boundaries | `Python`, `Scikit-Learn`, `Seaborn` | **Completed** | 
+| **02** | Real Estate Housing Price Prediction | Continuous Regression, Null Imputation, OLS, Ridge ($L_2$), Lasso ($L_1$), `GridSearchCV` | `Python`, `Scikit-Learn`, `Pandas` | **Completed** | 
+| **03** | Predictive Customer Churn Classifier | Class Imbalance Handling, Random Forest, XGBoost, Feature Importance, ROC-AUC Analysis | `Python`, `XGBoost`, `Scikit-Learn` | **Completed** | 
+| **04** | NLP Sentiment Classification on Customer Reviews | Text Tokenization, Stopword Removal, TF-IDF Vectorization, Naive Bayes, Logistic Regression | `Python`, `NLTK`, `Scikit-Learn` | **Completed** | 
+
+## 🛠️ Tech Stack & Environment
+
+* **Programming Language:** Python 3.x
+
+* **Development Environment:** Google Colab / Jupyter Notebooks
+
+* **Data Manipulation & Analysis:** `pandas`, `numpy`
+
+* **Data Visualization:** `matplotlib`, `seaborn`
+
+* **Machine Learning & Pipeline:** `scikit-learn`
+
+* **Ensemble Algorithms:** `xgboost`
+
+* **Version Control:** GitHub
+
+## 📂 Detailed Project Breakdown
+
+### 🎯 Task 1: Multi-Class Benchmark Classification Pipeline (Iris / Wine)
+
+* **Objective:** Build end-to-end supervised classification pipelines to classify multi-class targets using baseline models.
+
+* **Key Deliverables & Steps:**
+
+  1. Automated fallback loading of the benchmark dataset.
+
+  2. Exploratory Data Analysis (EDA) using multi-variate pairplots.
+
+  3. Feature normalization via `StandardScaler()`.
+
+  4. Comparative analysis of **Logistic Regression** and **Decision Tree Classifiers**.
+
+  5. 2D Decision Boundary visual mapping for dual-feature feature spaces and confusion matrix heatmaps.
+
+* **Notebook File:** `Task01_MultiClass_Benchmark_Classification.ipynb`
+
+### 🎯 Task 2: Real Estate Housing Price Prediction (Ridge & Lasso Regression)
+
+* **Objective:** Perform continuous house value prediction using the California Housing dataset and analyze residual errors.
+
+* **Key Deliverables & Steps:**
+
+  1. Missing value imputation via median strategy (`SimpleImputer`).
+
+  2. Feature engineering of interaction ratios (`RoomsPerHousehold`, `BedroomsPerRoom`).
+
+  3. Feature correlation heatmaps to diagnose multicollinearity.
+
+  4. Benchmark comparison between **Ordinary Least Squares (OLS)**, **Ridge (**$L_2$**)**, and **Lasso (**$L_1$**)** regression models.
+
+  5. Hyperparameter tuning of regularization strength ($\alpha$) using 5-fold `GridSearchCV`.
+
+  6. Evaluation via **RMSE**, **MAE**, and $R^2$ **Score**, alongside residual distribution plots.
+
+* **Notebook File:** `Task02_RealEstate_Housing_Price_Prediction.ipynb`
+
+### 🎯 Task 3: Predictive Customer Churn Classifier (Random Forest & XGBoost)
+
+* **Objective:** Solve severe class imbalance in subscription data and build high-precision ensemble classifiers for attrition prediction.
+
+* **Key Deliverables & Steps:**
+
+  1. Numeric coercion of `TotalCharges` and categorical `OneHotEncoding`.
+
+  2. Class balance balancing using `scale_pos_weight` and balanced class weighting.
+
+  3. Training and cross-validation of **Random Forest Classifier** and **XGBoost Classifier**.
+
+  4. Receiver Operating Characteristic (ROC-AUC) curve optimization (**Target AUC > 0.80**).
+
+  5. Extraction and horizontal bar chart plotting of the top 10 most influential features.
+
+* **Notebook File:** `Task03_Customer_Churn_Classifier.ipynb`
+
+### 🎯 Task 4: NLP Sentiment Classification on Customer Reviews (TF-IDF)
+
+* **Objective:** Classify textual customer reviews into positive/negative sentiment categories using Natural Language Processing (NLP).
+
+* **Key Deliverables & Steps:**
+
+  1. Text cleaning and English stopword elimination.
+
+  2. Feature extraction using `TfidfVectorizer` (Term Frequency-Inverse Document Frequency).
+
+  3. Training baseline text classifiers (**Multinomial Naive Bayes** & **Logistic Regression**).
+
+  4. Evaluation using Classification Report (Precision, Recall, F1-Score) and Confusion Matrix visualization.
+
+* **Notebook File:** `Task04_NLP_Sentiment_Classification.ipynb`
+
+## ⚙️ Execution & Setup Instructions
+
+To run these notebooks locally or in your cloud environment:
+
+1. **Clone the Repository:**
+
+   ```
+   git clone https://github.com/abdulghaffark2425/Datheon_Python_Programming.git
+   cd Datheon_Python_Programming
+   
+   ```
+
+2. **Open in Google Colab / Jupyter:**
+
+   * Upload any `.ipynb` file to [Google Colab](https://colab.research.google.com/).
+
+   * Alternatively, launch via local Jupyter notebook:
+
+     ```
+     jupyter notebook
+     
+     ```
+
+3. **Install Dependencies:**
+   Ensure the following libraries are installed:
+
+   ```
+   pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+   
+   ```
+
+## 👨‍💻 Author
+
+**Abdul Ghaffar**
+
+* **Role:** Machine Learning & Data Science Intern at Datheon
+
+* **GitHub:** [@abdulghaffark2425](https://github.com/abdulghaffark2425)
+
+*Developed as part of the Datheon Student Workspace ML Track.*
